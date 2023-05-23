@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ae6add6e95.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <title>E-Chat</title>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="title">
+        <img src="#" alt="" width="35px">
+        <h1>E-Chat</h1>
+      </div>
+      <button type="button" onclick="show_hide()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <div class="search">
+      <div class="chat-input">
+        <input type="text" placeholder="Usuario...">
+        <button>BUSCAR</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="users-window">
+        <div class="users-head">
+          <h3>Contactos</h3>
+          <h4>3</h4>
+        </div>
+        <div class="users-list">
+          <p>Daniela</p>
+          <p>Juan</p>
+          <p>Veronica</p>
+          <p>Pedro</p>
+        </div>
+      </div>
+      <div class="chat-window">
+        <div class="chats">
+          <div class="user-join">
+            <img src="https://lapi.com.mx/web/image/product.product/33844/image_1024/Paquete%20Perfil%20Mujer%20MID%20%28M%C3%A9rida%20Altabrisa%29?unique=8a485fd" alt="">
+            <p><span class="mark-user">Daniela</span> se unio al chat</p>
+          </div>
+          <div class="message incoming">
+            <h5>Daniela</h5>
+            <p>Hola Veronica</p>
+          </div>
+          <div class="message outgoing">
+            <h5>Veronica</h5>
+            <p>Bienvenida Daniela</p>
+            <p class="time-check">14:00 10/04/21<span> <i class="fa-solid fa-check check"></i></span></p>
+          </div>
+        </div>
+        <div class="user-input">
+          <select class="add-document">
+            <option disabled selected value="">Adjuntar</option>
+            <option value="imagen">Imagen</option>
+            <option value="video">Video</option>
+            <option value="documento">Documento</option>
+          </select>   
+          <input type="text" placeholder="Escribe tu mensaje...">
+          <button>ENVIAR</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
